@@ -14,7 +14,7 @@ body{
 }
 
 @media screen and (min-width: 992px) {
-    .content{
+    .content {
         max-width: 992px;
         height: auto;
         margin: 1rem auto;
@@ -22,7 +22,7 @@ body{
     }
 }
 
-.content h1 {
+.titulo-nome h1 {
     color: #000000;
     text-transform: uppercase;
     text-align: center;
