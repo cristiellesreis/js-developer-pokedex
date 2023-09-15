@@ -7,7 +7,8 @@ let offset = 0;
 
 function convertPokemonToLi(pokemon) {
     return `
-        <li class="pokemon ${pokemon.type}">
+        <li class="pokemon ${pokemon.type}" onclick="irParaDetalhe(${pokemon.number})">
+
             <span class="number">#${pokemon.number}</span>
             <span class="name">${pokemon.name}</span>
 
@@ -23,12 +24,18 @@ function convertPokemonToLi(pokemon) {
     `
 }
 
+function irParaDetalhe(id){
+    sessionStorage.setItem("id_pokemon", id);
+    window.location.href = "/details.html";
+}
+
 function loadPokemonItens(offset, limit) {
     pokeApi.getPokemons(offset, limit).then((pokemons = []) => {
         const newHtml = pokemons.map(convertPokemonToLi).join('')
         pokemonList.innerHTML += newHtml
     })
 }
+
 
 loadPokemonItens(offset, limit)
 

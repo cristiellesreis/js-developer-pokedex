@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokemon Details</title>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css2?family=Mohave&family=Roboto:wght@100;300;500;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="/assets/css/global.css">
+    <link rel="stylesheet" href="/assets/css/details.css">
+    <link rel="stylesheet" href="/assets/css/pokedex.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,300,0,0" />
+
+</head>
+    <body>
+        <section id="cardPokemon">
+            <div class="icones">
+                <div class="arrow" onclick="voltar()"><span class="material-symbols-outlined">
+                    keyboard_backspace
+                </span></div>
+                <div class="favorite"><span class="material-symbols-outlined">
+                    favorite
+                </span></div>
+            </div>
+            <div> 
+                <h1 id="nomePokemon"></h1>
+                <div class="identificador-pokemon">
+                    <span id="numeroPokemon"></span>
+                </div>
+                <div id="tiposPokemon"></div>
+
+                <div class="imagem-pokemon">
+                    <img id="imagemPokemon">
+                </div>
+
+                <div class="container-opcoes-detalhes">
+                    <nav class="menu-detalhes">
+                        <div><a>about</a></div>
+                        <div><a>base status</a></div>
+                        <div><a>evolution</a></div>
+                        <div><a>moves</a></div>
+                    </nav>
+                    <div class="container-detalhes">
+                        <div>species</div>
+                        <div id="pokemonEspecie"></div>
+                        <div>height</div>
+                        <div id="pokemonHeight"></div>
+                        <div>weight</div>
+                        <div id="pokemonWeight"></div>
+                        <div>abilities</div>
+                        <div id="pokemonAbilities"></div>
+                        <h4>breeding</h4>
+                        <br>
+                        <div>gender</div>
+                        <br>
+                        <div>egg groups</div>
+                        <br>
+                        <div>egg cycle</div>
+                        <br>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <script src="/assets/js/pokemon-model.js"></script>
+        <script src="/assets/js/poke-api.js"></script>
+        <script src="assets/js/details.js"></script>
+        
+    </body>
+</html>
