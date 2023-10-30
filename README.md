@@ -9,7 +9,7 @@ Projeto desenvolvido no curso de JavaScript do Bootcamp Santander 2023, onde des
 
 ## Screenshots
 
-<img src="/screenshots/pokedex.png">
+<img src="/pokedex.png">
 
 ## Tecnologias utilizadas
 
